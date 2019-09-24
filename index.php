@@ -14,8 +14,8 @@ $correct = array("贵","レ","ふ","て",'应','ヌ','杂',"货","见","溃","�
 <body>
 <div class="input-group">
   <div class="input-group-prepend">
-    <span class="input-group-text">With textarea</span>
+    <span class="input-group-text">ここに正しい日本語を入力する（しなさい）</span>
   </div>
-  <textarea class="form-control" aria-label="With textarea"></textarea>
+  <textarea class="form-control" aria-label="ここに正しい日本語を入力する（しなさい）"></textarea>
 </div>
 </body>
