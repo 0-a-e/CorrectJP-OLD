@@ -1,5 +1,5 @@
 <?php
 echo ("おっぱいまんこ");
-$right = 
-$correct = 
+$right = array("");
+$correct = array("");
 ?>
