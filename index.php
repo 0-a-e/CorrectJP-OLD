@@ -13,8 +13,8 @@ $correct = array("贵","レ","ふ","て",'应','ヌ','杂',"货","见","溃","�
 </head>
 <body>
 <!-- As a link -->
-<nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="#">怪しい日本語ジェネレーター</a>
+<nav class="navbar" style="background-color: #2A2D31;" >
+  <a class="navbar-brand" href="#" style="color: #ffffff;">怪しい日本語ジェネレーター</a>
 </nav>
 <form method="POST" action="view.php">
 <div class="input-group">
