@@ -12,10 +12,17 @@ $correct = array("贵","レ","ふ","て",'应','ヌ','杂',"货","见","溃","�
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
+<!-- As a link -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">怪しい日本語ジェネレーター</a>
+</nav>
+<form method="POST" action="view.php">
 <div class="input-group">
   <div class="input-group-prepend">
-    <span class="input-group-text">ここに正しい日本語を入力する（しなさい）</span>
+    <span class="input-group-text"></span>
   </div>
-  <textarea class="form-control" aria-label="ここに正しい日本語を入力する（しなさい）"></textarea>
+  <textarea name="text" class="form-control" aria-label=""></textarea>
 </div>
+<button type="submit" class="btn btn-primary btn-lg btn-block">怪しい日本語にする</button>
+</form>
 </body>
