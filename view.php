@@ -41,7 +41,7 @@ function copy() {
 </script>
 <footer class="fixed-bottom"　 style="text-align: center; background-color: #2a2d31; color: #ffffff;">
 </br>
-        <p>Created by <a href="https://twitter.com/0_a_e" class="" style="color: #ffffff;">Orange</a>. MIT License.</p>
+        <p><a href="https://twitter.com/0_a_e" class="" style="color: #ffffff;">Created by Orange. MIT License.</a></p>
         <p style="color: #ffffff;"><a href="https://github.com/orangelinux/CorrectJP-NEW" style="color: #ffffff;" class="btn">ソースコードはGithubに公開されています。<i class="material-icons" style="color: #ffffff;">link</i></a></p>
     </footer>
 </body>
