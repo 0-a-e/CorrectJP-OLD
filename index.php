@@ -25,11 +25,11 @@
   </div>
   <textarea name="text" class="form-control" aria-label=""></textarea>
 </div>
-<button type="submit" style="color: #7289DA; font-size: 18px;" class="btn btn-primary btn-block">怪レい日本语にすゑ</button>
-</form>
-<footer class="fixed-bottom"　 style="text-align: center; background-color: #2a2d31; color: #ffffff;">
 </br>
-<p><a href="https://twitter.com/0_a_e" class="btn" style="color: #ffffff;">Created by Orange. MIT License.</a></p>
-        <p style="color: #ffffff;"><a href="https://github.com/orangelinux/CorrectJP-NEW" style="color: #ffffff;" class="btn">ソースコードはGithubに公開されています。<i class="material-icons" style="color: #ffffff;">link</i></a></p>
+<button type="submit" style="color: #ffffff; background-color: #2A2D31; height: 5rem; box-shadow: 0px 0.5px 5px gray; font-size: 18px; border-radius: 50px;" class="btn btn-primary btn-block">怪レい日本语にすゑ</button>
+</form>
+<footer class="fixed-bottom"　 style="position: absolute; text-align: center; background-color: #2a2d31; color: #ffffff;">
+<p style="margin: 0;"><a href="https://twitter.com/0_a_e" class="btn" style="color: #ffffff; margin-bottom: 0rem; text-transform: none;">Created by Orange. MIT License.</a></p>
+        <p style="margin: 0; color: #ffffff;"><a href="https://github.com/orangelinux/CorrectJP-NEW" style="color: #ffffff;" class="btn">ソースコードはGithubに公開されています。<i class="material-icons" style="color: #ffffff;">link</i></a></p>
     </footer>
 </body>
