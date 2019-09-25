@@ -17,6 +17,12 @@ $correct = array("贵","レ","ふ","て",'应','ヌ','杂',"货","见","溃","�
 <nav class="navbar" style="background-color: #2A2D31;" >
   <a class="navbar-brand" href="#" style="color: #ffffff;">怪しい日本語ジェネレーター</a>
 </nav>
+</br>
+</br>
+</br>
+<h2 style="text-align: center;">怪レい日本语ジェネレーター</h2>
+<h5 style="text-align: center;">贵様の正レい日本语を怪レい日本语に変換レ(しなさい)。</h5>
+</br>
 <form method="POST" action="view.php">
 <div class="input-group">
   <div class="input-group-prepend">
@@ -24,6 +30,10 @@ $correct = array("贵","レ","ふ","て",'应','ヌ','杂',"货","见","溃","�
   </div>
   <textarea name="text" class="form-control" aria-label=""></textarea>
 </div>
-<button type="submit" class="btn btn-primary btn-lg btn-block">怪しい日本語にする</button>
+<button type="submit" style="color: #7289DA; font-size: 18px;" class="btn btn-primary btn-block">怪レい日本语にする</button>
 </form>
+<footer class="fixed-bottom"　 style="background-color: #2a2d31; color: #ffffff;">
+        <p>Created by <a href="https://twitter.com/0_a_e" class="btn" style="color: #ffffff;">Orange</a>.</p>
+        <p><a href="https://github.com/orangelinux/CorrectJP-NEW">ソースコードはGithubに公開されています。<i class="material-icons" style="color: #ffffff;">link</i></a></p>
+    </footer>
 </body>
