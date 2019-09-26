@@ -37,11 +37,9 @@ if (empty($_SERVER['HTTPS'])) {
 <nav class="navbar" style="background-color: #2A2D31;" >
   <a class="navbar-brand" href="#" style="color: #ffffff;">怪しい日本語ジェネレーター</a>
 </nav>
-<div class="Logos">
-</br>
-</br>
-</br>
-<h2 class="top" style="text-align: center; font-size: 29px;">怪レい日本语ジェネレーター</h2>
+
+<div class="Logos" style="position: relative; margin-top: 30px;">
+<h2 class="top" style="text-align: center; font-size: 28px;">怪レい日本语ジェネレーター</h2>
 <h5 style="text-align: center;">贵様の正レい日本语を怪レい日本语に変換レ(しなさい)。</h5>
 </div>
 </br>
@@ -57,9 +55,7 @@ if (empty($_SERVER['HTTPS'])) {
 <button type="submit" style="color: #ffffff; background-color: #2A2D31; height: 5rem; box-shadow: 0px 0.5px 5px gray; font-size: 18px; border-radius: 50px;" class="btn btn-primary btn-block">怪レい日本语にすゑ</button>
 </form>
 <div class="app" style="text-align: center;">
-<p>androidアプリはこちら</p>
-<a href="https://play.google.com/store/apps/details?id=com.shenyusoftware.correctjp&hl=ja" style="border-radius: 4px;" class="btn btn-outline-dark">怪しい日本語ジェネレーターをインストール</a>
-<img width="61" height="15" src="./gp.png"></img>
+<a href="https://play.google.com/store/apps/details?id=com.shenyusoftware.correctjp&hl=ja" style="padding: .46875rem .3rem;border-radius: 4px;" class="btn btn-outline-dark"><img width="63" height="15.3" src="./gp.png"></img>から怪しい日本語をインストール</a>
 </div>
 <!--
 <div

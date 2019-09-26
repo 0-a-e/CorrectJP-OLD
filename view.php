@@ -14,7 +14,13 @@ if(!empty($nright)){
  //tmhOAuth.phpをインクルードします。
  require_once("./OA/tmhOAuth.php");
 
-
+ $sConsumerKey = "WOxxZLOVJRx976nxgRLln5iqB";
+ //Consumer secretの値を格納
+ $sConsumerSecret = "QJWFwvobL5zCQonbGgDSvOozwBy5KJmeqHXVi0FAkNDrI86r9Q";
+ //Access Tokenの値を格納
+ $sAccessToken = "884739810958524416-FBVqmN95aKvLjiawknhBjqdvk5m6bft";
+ //Access Token Secretの値を格納
+ $sAccessTokenSecret = "mpnNIsIXq8gjldefwO41ASjxiO5p7qZf3ABOTMYiymGfn";
  
  $twObj = new tmhOauth(
  array(
@@ -86,6 +92,6 @@ function copy() {
 </script>
 <footer class="fixed-bottom"　 style="text-align: center; background-color: #2a2d31; color: #ffffff;">
 <p style="margin: 0;"><a href="https://twitter.com/0_a_e" class="btn" style="color: #ffffff; margin-bottom: 0rem; text-transform: none;">Created by Orange. MIT License.</a></p>
-        <p style="margin: 0; color: #ffffff;"><a href="https://github.com/orangelinux/CorrectJP-NEW" style="color: #ffffff;" class="btn">ソースコードはGithubに公開されています。<i class="material-icons" style="color: #ffffff;">link</i></a></p>
+        <p style="margin: 0; color: #ffffff; display: inline-flex; vertical-align: middle;"><a href="https://github.com/orangelinux/CorrectJP-NEW" style="color: #ffffff; display: inline-flex; vertical-align: middle;" class="btn">ソースコードはGithubに公開されています。<i class="material-icons" style="color: #ffffff;">link</i></a></p>
     </footer>
 </body>
