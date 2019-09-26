@@ -14,13 +14,7 @@ if(!empty($nright)){
  //tmhOAuth.phpをインクルードします。
  require_once("./OA/tmhOAuth.php");
 
- $sConsumerKey = "WOxxZLOVJRx976nxgRLln5iqB";
- //Consumer secretの値を格納
- $sConsumerSecret = "QJWFwvobL5zCQonbGgDSvOozwBy5KJmeqHXVi0FAkNDrI86r9Q";
- //Access Tokenの値を格納
- $sAccessToken = "884739810958524416-FBVqmN95aKvLjiawknhBjqdvk5m6bft";
- //Access Token Secretの値を格納
- $sAccessTokenSecret = "mpnNIsIXq8gjldefwO41ASjxiO5p7qZf3ABOTMYiymGfn";
+
  
  $twObj = new tmhOauth(
  array(
