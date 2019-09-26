@@ -1,6 +1,14 @@
+<?php
+if (empty($_SERVER['HTTPS'])) {
+    header("Location: https://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}");
+    exit;
+}
+?>
 <head>
-
+<title>怪しい日本語ジェネレーター</title>
 <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="loading-bar.css"/>
+<script type="text/javascript" src="loading-bar.js"></script>
 <meta name="application-name" content="怪しい日本語ジェネレーター">
 <meta name="author" content="CorrectJPweb-Orange">
 <meta name="keywords" content="correctjp,怪しい日本語bot,怪しい日本語　変換,怪しい日本語">
@@ -19,29 +27,47 @@
 <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
 <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style>
+.top {
+}
+</style>
 </head>
 <body>
 <!-- As a link -->
 <nav class="navbar" style="background-color: #2A2D31;" >
   <a class="navbar-brand" href="#" style="color: #ffffff;">怪しい日本語ジェネレーター</a>
 </nav>
+<div class="Logos">
 </br>
 </br>
 </br>
-<h2 style="text-align: center;">怪レい日本语ジェネレーター</h2>
+<h2 class="top" style="text-align: center; font-size: 29px;">怪レい日本语ジェネレーター</h2>
 <h5 style="text-align: center;">贵様の正レい日本语を怪レい日本语に変換レ(しなさい)。</h5>
+</div>
 </br>
+<p style="color: gray; text-align: center;">下に正レい日本语を入力レ(しなさい)。</p>
 <form method="POST" action="view.php">
 <div class="input-group">
   <div class="input-group-prepend">
     <span class="input-group-text"></span>
   </div>
-  <textarea name="text" class="form-control" aria-label=""></textarea>
+  <textarea name="text" class="form-control" aria-label="ここに正レい日本语を入力レ(しなさい)。"></textarea>
 </div>
 </br>
 <button type="submit" style="color: #ffffff; background-color: #2A2D31; height: 5rem; box-shadow: 0px 0.5px 5px gray; font-size: 18px; border-radius: 50px;" class="btn btn-primary btn-block">怪レい日本语にすゑ</button>
 </form>
+<div class="app" style="text-align: center;">
+<p>androidアプリはこちら</p>
+<a href="https://play.google.com/store/apps/details?id=com.shenyusoftware.correctjp&hl=ja" style="border-radius: 4px;" class="btn btn-outline-dark">怪しい日本語ジェネレーターをインストール</a>
+<img width="61" height="15" src="./gp.png"></img>
+</div>
 <!--
+<div
+  class="ldBar"
+  data-value="35"
+  data-preset="bubble">
+</div>
+
 <footer class="fixed-bottom"　 style="position: absolute; text-align: center; background-color: #2a2d31; color: #ffffff;">
 <p style="margin: 0;"><a href="https://twitter.com/0_a_e" class="btn" style="color: #ffffff; margin-bottom: 0rem; text-transform: none;">Created by Orange. MIT License.</a></p>
         <p style="margin: 0; color: #ffffff;"><a href="https://github.com/orangelinux/CorrectJP-NEW" style="color: #ffffff;" class="btn">ソースコードはGithubに公開されています。<i class="material-icons" style="color: #ffffff;">link</i></a></p>
