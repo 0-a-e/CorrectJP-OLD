@@ -9,13 +9,7 @@ $right = array("あなた","貴","し","ぶ","で","応","ス","雑",'貨','見'
 $correct = array("貴様","贵","レ","ふ","て",'应','ヌ','杂',"货","见","溃","ぬ","ギ","そ","舐","绝","对","慧","贮","们","cn","CCTV","HUAWEI","人民元","alipay","WechatPay","weibo","ウェイボ","Tiktok","Tiktok","wechat","wechat","wechat","风","(しなさい)","强","北京","深圳","百度","百度","百度","上海中心","shanghai tower","上海","八゜","亚马逊","亚马逊","乘","黑","Kirin","NM","荒野行動","極度勞動","うーメソ","🇨🇳","🇨🇳","🇨🇳","🇨🇳","🇨🇳","🇨🇳","🇨🇳","🇨🇳","🇨🇳","才","爱","语","ゐ","ゑ","HUAWEI","ファーウェイ","た","變","荣","强","ラ","八","应","伟","义","结","协","调","剂","樣","乜",'动',"评");
 $nright = str_replace($right,$correct,$text);
 
-$sConsumerKey = "WOxxZLOVJRx976nxgRLln5iqB";
-//Consumer secretの値を格納
-$sConsumerSecret = "QJWFwvobL5zCQonbGgDSvOozwBy5KJmeqHXVi0FAkNDrI86r9Q";
-//Access Tokenの値を格納
-$sAccessToken = "884739810958524416-FBVqmN95aKvLjiawknhBjqdvk5m6bft";
-//Access Token Secretの値を格納
-$sAccessTokenSecret = "mpnNIsIXq8gjldefwO41ASjxiO5p7qZf3ABOTMYiymGfn";
+
 ?>
 <head>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
