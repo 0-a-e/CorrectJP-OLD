@@ -111,6 +111,40 @@ if (empty($_SERVER['HTTPS'])) {
     transform: rotate(360deg);
   }
 }
+.lavel1 {
+  position: relative;
+  border: none;
+  outline: none;
+  user-select: none;
+  transition: 0.2s;
+}
+.lavel2 {
+  position: relative;
+  border: none;
+  outline: none;
+  user-select: none;
+  transition: 0.2s;
+}
+input[type="checkbox"]:checked + .lavel1 {
+  color: #53ed98;
+  transform:rotateZ(360deg);
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -moz-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-flex;
+  vertical-align: middle;
+}
 </style>
 </head>
 <body>
@@ -120,11 +154,14 @@ if (empty($_SERVER['HTTPS'])) {
 </nav>
 
 <div class="Logos" style="position: relative; margin-top: 30px;">
+<div class="alert alert-danger" role="alert">
+  メンテナンス中です。使用は可能ですが、正常に動作しない可能性があります。
+</div>
 <h2 class="top" style="text-align: center; font-size: 28px;">怪レい日本语ジェネレーター</h2>
 <h5 style="text-align: center;">贵様の正レい日本语を怪レい日本语に変換レ(しなさい)。</h5>
 </div>
 </br>
-<p style="color: gray; text-align: center;">下に正レい日本语を入力レ(しなさい)。</p>
+<p style="color: gray; text-align: center;">下に正レい日本语を入力(しなさい)。</p>
 <div id="forms">
 <div class="input-group">
   <div class="input-group-prepend">
@@ -133,8 +170,18 @@ if (empty($_SERVER['HTTPS'])) {
   <textarea class="form-control" id="xtjj"></textarea>
 </div>
 </br>
-<button onClick="Next()" style="color: #ffffff; background-color: #2A2D31; height: 5rem; box-shadow: 0px 0.5px 5px gray; font-size: 18px; border-radius: 50px;" class="btn btn-primary btn-block">怪レい日本语にすゑ</button>
+<button onClick="Next()" style="color: #ffffff; background-color: #2A2D31; height: 5rem; box-shadow: 0px 0.5px 5px gray; font-size: 18px; border-radius: 50px;" id="bt" class="btn btn-primary btn-block">怪レい日本语にすゑ</button>
 </div>
+</br>
+<form name="reve" style="text-align: center;">
+<label style="text-align: center; border-radius: 5px; line-height: 0.5; padding: .46875rem .3rem; " for="reverse" onClick="btchange()" class="btn btn-outline-dark">
+<input style="display: none;" type="checkbox" id="reverse">
+<label onClick="btchange()" class="lavel1" for="reverse"><i class="material-icons">
+autorenew
+</i></label>
+<label onClick="btchange()" style="margin 0 auto;" class="lavel2" for="reverse">逆変換</label>
+</label>
+</form>
 <?php
 if($app == y){
 
@@ -159,14 +206,39 @@ if($app == y){
         <p style="margin: 0; color: #ffffff;"><a href="https://github.com/orangelinux/CorrectJP-NEW" style="color: #ffffff;" class="btn">ソースコードはGithubに公開されています。<i class="material-icons" style="color: #ffffff;">link</i></a></p>
     </footer> -->
 <script>
+function reinput() {
+  const form = document.getElementById("forms");
+  forms.innerHTML = '<div class="input-group"><div class="input-group-prepend"><span class="input-group-text"></span></div><textarea class="form-control" id="xtjj"></textarea></div></br><button onClick="Next()" style="color: #ffffff; background-color: #2A2D31; height: 5rem; box-shadow: 0px 0.5px 5px gray; font-size: 18px; border-radius: 50px;" id="bt" class="btn btn-primary btn-block">怪レい日本语にすゑ</button></div>';
+}
+function btchange() {
+const bt = document.getElementById("bt");
+const reverse = document.reve.reverse.checked;
+if(reverse){
+bt.innerHTML = '正しい日本語にする';
+} else {
+  bt.innerHTML = '怪レい日本语にすゑ';
+}
+console.log("STAT");
+}
 function Next(){
 const form = document.getElementById("forms");
+const bt = document.getElementById("bt");
+const reverse = document.reve.reverse.checked;
 const tagg = document.getElementById( "xtjj" ).value;
-if(!form){
-form.innerHTML= '<h3>テキストが入力されていません。</h3>';
+console.log(reverse);
+if(tagg == "") {
+  console.log("tagg empty!");
+form.innerHTML= '<div style="text-align: center;"><h5 style="text-align: center; color:#ff8e8c;">テキストが入力されていません。</h5><button class="btn btn-outline-dark" onClick="reinput()">入力する</button></div>';
 } else {
+  if(reverse){
+    console.log("ry");
+    rvw = "y";
+  }else {
+    console.log("rf");
+    rvw = "n";
+    }
 form.innerHTML= '<div class="loader">Loading...</div>';
-const URL = 'https://correctjp.work/view.php?text=' + tagg<?php if($app == y){echo('+ "&app=y"'); } ?>;
+const URL = 'https://correctjp.work/view.php?rv=' + rvw + '&text=' + tagg<?php if($app == y){echo('+ "&app=y"'); } ?>;
 console.log(URL);
 location.href=URL;
 }

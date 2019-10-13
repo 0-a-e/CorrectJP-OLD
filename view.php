@@ -5,10 +5,14 @@ if (empty($_SERVER['HTTPS'])) {
 }
 $text = $_GET["text"];
 $app = $_GET["app"];
-$right = array("あなた","貴","し","ぶ","で","応","ス","雑",'貨','見',"潰","め","キ","ぞ","舐","絶","対","得","溜","達","jp","NHK","XPERIA","円","LINEpay","PayPay","Twitter","ツイッター","instagram","インスタ","ライン","LINE","line","風","なさい","強","東京","シリコンバレー","google","グーグル","Google","スカイツリー","SKY TREE","TOKYO","ハ","amazon","アマゾン","乘","黑","snapdragon","SD","PUBG","労働","ラーメン","🇯🇵","🇰🇷","🇺🇸","🇬🇧","🇷🇺","🇩🇪","🇮🇳","🇿🇦","🇧🇷","オ","愛","語","ぬ","る","iphone","アイフォン","だ","変","榮","強","う","ハ","応","偉","義","結","協","調","剤","様","セ","動","評");
-$correct = array("貴様","贵","レ","ふ","て",'应','ヌ','杂',"货","见","溃","ぬ","ギ","そ","舐","绝","对","慧","贮","们","cn","CCTV","HUAWEI","人民元","alipay","WechatPay","weibo","ウェイボ","Tiktok","Tiktok","wechat","wechat","wechat","风","(しなさい)","强","北京","深圳","百度","百度","百度","上海中心","shanghai tower","上海","八゜","亚马逊","亚马逊","乘","黑","Kirin","NM","荒野行動","極度勞動","うーメソ","🇨🇳","🇨🇳","🇨🇳","🇨🇳","🇨🇳","🇨🇳","🇨🇳","🇨🇳","🇨🇳","才","爱","语","ゐ","ゑ","HUAWEI","ファーウェイ","た","變","荣","强","ラ","八","应","伟","义","结","协","调","剂","樣","乜",'动',"评");
+$rv = $_GET["rv"];
+$right = array("多","鳥","雨","両","並","メルカリ","AQUOS","aquos","Aquos","huaweimk","あなた","貴","し","ぶ","で","応","ス","雑",'貨','見',"潰","め","キ","ぞ","舐","絶","対","得","溜","達","jp","NHK","XPERIA","円","LINEpay","PayPay","Twitter","ツイッター","instagram","インスタ","ライン","LINE","line","風","なさい","強","東京","シリコンバレー","google","グーグル","Google","スカイツリー","SKY TREE","TOKYO","ハ","amazon","アマゾン","乘","黑","snapdragon","SD","PUBG","労働","東","ラーメン","🇯🇵","🇰🇷","🇺🇸","🇬🇧","🇷🇺","🇩🇪","🇮🇳","🇿🇦","🇧🇷","オ","愛","語","ぬ","る","iphone","アイフォン","だ","変","榮","強","う","ハ","応","偉","義","結","協","調","剤","様","セ","動","評","ファーウェイ","HUAWEI");
+$correct = array("乡","乌","丽","两","业","淘宝網","HUAWEI","HUAWEI","HUAWEI","ファーウェイウェイ","貴様","贵","レ","ふ","て",'应','ヌ','杂',"货","见","溃","ぬ","ギ","そ","舐","绝","对","慧","贮","们","cn","CCTV","HUAWEI","人民元","alipay","WechatPay","weibo","ウェイボ","Tiktok","Tiktok","wechat","wechat","wechat","风","(しなさい)","强","北京","深圳","百度","百度","百度","上海中心","shanghai tower","上海","八゜","亚马逊","亚马逊","乘","黑","Kirin","NM","荒野行動","極度勞動","东","うーメソ","🇨🇳","🇨🇳","🇨🇳","🇨🇳","🇨🇳","🇨🇳","🇨🇳","🇨🇳","🇨🇳","才","爱","语","ゐ","ゑ","HUAWEI","ファーウェイ","た","變","荣","强","ラ","八","应","伟","义","结","协","调","剂","樣","乜",'动',"评","华为技术有限公司","华为技术有限公司");
+if ($rv == "y"){
+$nright = str_replace($correct,$right,$text);
+} else {
 $nright = str_replace($right,$correct,$text);
-
+}
 
 ?>
 <head>
@@ -24,11 +28,11 @@ $nright = str_replace($right,$correct,$text);
 <body>
 <!-- As a link -->
 <nav class="navbar" style="background-color: #2A2D31;">
-<?php if($app == y) {echo('<a href="https://correctjp.work?app=y" style="border-radius: 1000px;" class="btn btn-link"><i class="material-icons" style="color: #ffffff;">');} else {echo('<a href="https://correctjp.work" style="border-radius: 1000px;" class="btn btn-link"><i class="material-icons" style="color: #ffffff;">');} ?>
+<?php if($app == y) {echo('<a href="https://correctjp.work?app=y" style="border-radius: 1000px;" class="btn btn-link"><i class="material-icons" style="color: #ffffff;">');} else {echo('<a href="https://correctjp.work" style="border-radius: 1000px; padding: 0.5rem;" class="btn btn-link"><i class="material-icons" style="font-size: 24px; color: #ffffff;">');} ?>
 arrow_back
 </i>
 </a>
-  <a class="navbar-brand" style="color: #ffffff;" style="position: relative; " href="https://correctjp.work">怪しい日本語</a>
+  <a class="navbar-brand" style="color: #ffffff;" style="position: relative; " href="https://correctjp.work">怪しい日本語<?php if ($rv == "y"){echo("逆変換"); } ?></a>
 </nav>
 <textarea id="mainboard" style="position: relative; width: 100%; height: 100%;"><?php echo $nright; ?></textarea>
 
