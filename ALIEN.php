@@ -6,11 +6,11 @@ if (empty($_SERVER['HTTPS'])) {
 }
 ?>
 <head>
-<title>怪しい日本語ジェネレーター</title>
+<title>ALIENジェネレーター</title>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="loading-bar.css"/>
 <script type="text/javascript" src="loading-bar.js"></script>
-<meta name="application-name" content="怪しい日本語ジェネレーター">
+<meta name="application-name" content="ALIENジェネレーター">
 <meta name="author" content="CorrectJPweb-Orange">
 <meta name="keywords" content="correctjp,怪しい日本語bot,怪しい日本語　変換,怪しい日本語">
 <meta http-equiv="content-language" content="ja">
@@ -160,14 +160,14 @@ input[type="checkbox"]:checked + .lavel2 {
 <body>
 <!-- As a link -->
 <nav class="navbar" style="background-color: #2A2D31;" >
-  <a class="navbar-brand" href="#" style="color: #ffffff;">怪しい日本語ジェネレーター</a>
+  <a class="navbar-brand" href="#" style="color: #ffffff;">ALIENジェネレーター</a>
 </nav>
 
 <div class="Logos" style="position: relative; margin-top: 30px;">
 <div class="alert alert-danger" role="alert">
   メンテナンス中です。使用は可能ですが、正常に動作しない可能性があります。
 </div>
-<h2 class="top" style="text-align: center; font-size: 28px;">怪レい日本语ジェネレーター</h2>
+<h2 class="top" style="text-align: center; font-size: 28px;">ALIENジェネレーター</h2>
 <h5 style="text-align: center;">贵様の正レい日本语を怪レい日本语に変換レ(しなさい)。</h5>
 </div>
 </br>
@@ -177,7 +177,7 @@ input[type="checkbox"]:checked + .lavel2 {
   <div class="input-group-prepend">
     <span class="input-group-text"></span>
   </div>
-  <textarea class="form-control" id="xtjj"></textarea>
+  <textarea style="text-transform: uppercase;" class="form-control" id="xtjj"></textarea>
 </div>
 </br>
 <button onClick="Next()" style="color: #ffffff; background-color: #2A2D31; height: 5rem; box-shadow: 0px 0.5px 5px gray; font-size: 18px; border-radius: 50px;" id="bt" class="btn btn-primary btn-block">怪レい日本语にすゑ</button>
@@ -318,7 +318,7 @@ form.innerHTML= '<div style="text-align: center;"><h5 style="text-align: center;
     rvw = "n";
     }
 form.innerHTML= '<div class="loader">Loading...</div>';
-const URL = 'https://correctjp.work/view.php?rv=' + rvw + '&text=' + tagg<?php if($app == y){echo('+ "&app=y"'); } ?>;
+const URL = 'https://correctjp.work/ALIENview.php?rv=' + rvw + '&text=' + tagg<?php if($app == y){echo('+ "&app=y"'); } ?>;
 console.log(URL);
 location.href=URL;
 }
