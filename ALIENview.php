@@ -3,13 +3,14 @@ if (empty($_SERVER['HTTPS'])) {
     header("Location: https://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}");
     exit;
 }
-$text = $_GET["text"];
+$tet = $_GET["text"];
 $app = $_GET["app"];
 $rv = $_GET["rv"];
+$text = strtoupper($tet);
 #𝐐𝐖𝐄𝐑𝐓𝐘𝐔𝐈𝐎𝐏𝐀𝐒𝐃𝐅𝐆𝐇𝐉𝐊𝐋"𝐙𝐗𝐂𝐕𝐁𝐍𝐌
 #𝐀𝐁𝐂𝐃𝐄𝐅𝐆𝐇𝐈𝐉𝐊𝐋𝐌𝐍𝐎𝐏𝐐𝐑𝐒𝐓𝐔𝐕𝐖𝐗𝐘𝐙
-$right = array("A","B","C","D","E","F","G","H","I","J","K","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z");
-$correct = array("𝐀","𝐁","𝐂","𝐃","𝐄","𝐅","𝐆","𝐇","𝐈","𝐉","𝐊","𝐌","𝐍","𝐎","𝐏","𝐐","𝐑","𝐒","𝐓","𝐔","𝐕","𝐖","𝐗","𝐘","𝐙");
+$right = array("A","B","C","D","E","F","G","H","I","J","K","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","1","2","3","4","5","6","7","8","9","0");
+$correct = array("𝐀","𝐁","𝐂","𝐃","𝐄","𝐅","𝐆","𝐇","𝐈","𝐉","𝐊","𝐌","𝐍","𝐎","𝐏","𝐐","𝐑","𝐒","𝐓","𝐔","𝐕","𝐖","𝐗","𝐘","𝐙","𝟏","𝟐","𝟑","𝟒","𝟓","𝟔","𝟕","𝟖","𝟗","𝟎");
 if ($rv == "y"){
 $nright = str_replace($correct,$right,$text);
 } else {
@@ -29,12 +30,17 @@ $nright = str_replace($right,$correct,$text);
 </head>
 <body>
 <!-- As a link -->
-<nav class="navbar" style="background-color: #2A2D31;">
-<?php if($app == y) {echo('<a href="https://correctjp.work?app=y" style="border-radius: 1000px;" class="btn btn-link"><i class="material-icons" style="color: #ffffff;">');} else {echo('<a href="https://correctjp.work" style="border-radius: 1000px; padding: 0.5rem;" class="btn btn-link"><i class="material-icons" style="font-size: 24px; color: #ffffff;">');} ?>
+<nav class="navbar" style="background-color: #19018c;">
+<?php if($app == y) {echo('<a href="https://correctjp.work/ALIEN.php?app=y" style="border-radius: 1000px;" class="btn btn-link"><i class="material-icons" style="color: #ffffff;">');} else {echo('<a href="https://correctjp.work/ALIEN.php" style="border-radius: 1000px; padding: 0.5rem;" class="btn btn-link"><i class="material-icons" style="font-size: 24px; color: #ffffff;">');} ?>
 arrow_back
 </i>
 </a>
-  <a class="navbar-brand" style="color: #ffffff;" style="position: relative; " href="https://correctjp.work">怪しい日本語<?php if ($rv == "y"){echo("逆変換"); } ?></a>
+<ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" style="color:#ffffff;" href="/">怪しい日本語<span class="sr-only">(current)</span></a>
+      </li>
+  </ul>
+  <a class="navbar-brand" style="color: #ffffff;" style="position: relative; " href="https://correctjp.work">𝐀L𝐈𝐄𝐍<?php if ($rv == "y"){echo("逆変換"); } ?></a>
 </nav>
 <textarea id="mainboard" style="position: relative; width: 100%; height: 100%;"><?php echo $nright; ?></textarea>
 
@@ -49,7 +55,7 @@ function copy() {
     document.execCommand("copy");
 }
 </script>
-<footer class="fixed-bottom"　 style="text-align: center; background-color: #2a2d31; color: #ffffff;">
+<footer class="fixed-bottom"　 style="text-align: center; background-color: #19018c; color: #ffffff;">
 <p style="margin: 0;"><a href="https://twitter.com/0_a_e" class="btn" style="color: #ffffff; margin-bottom: 0rem; text-transform: none;">Created by Orange. MIT License.</a></p>
         <p style="margin: 0; color: #ffffff; display: inline-flex; vertical-align: middle;"><a href="https://github.com/orangelinux/CorrectJP-NEW" style="color: #ffffff; display: inline-flex; vertical-align: middle;" class="btn">ソースコードはGithubに公開されています。<i class="material-icons" style="color: #ffffff; padding-bottom: 3px;">link</i></a></p>
     </footer>

@@ -161,6 +161,11 @@ input[type="checkbox"]:checked + .lavel2 {
 <!-- As a link -->
 <nav class="navbar" style="background-color: #2A2D31;" >
   <a class="navbar-brand" href="#" style="color: #ffffff;">怪しい日本語ジェネレーター</a>
+  <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" style="color:#ffffff;" href="/ALIEN.php">ALIENジェネレーター<span class="sr-only">(current)</span></a>
+      </li>
+  </ul>
 </nav>
 
 <div class="Logos" style="position: relative; margin-top: 30px;">

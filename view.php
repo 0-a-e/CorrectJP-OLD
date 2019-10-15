@@ -33,6 +33,11 @@ arrow_back
 </i>
 </a>
   <a class="navbar-brand" style="color: #ffffff;" style="position: relative; " href="https://correctjp.work">怪しい日本語<?php if ($rv == "y"){echo("逆変換"); } ?></a>
+  <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" style="color:#ffffff;" href="/ALIEN.php">ALIENジェネレーター<span class="sr-only">(current)</span></a>
+      </li>
+  </ul>
 </nav>
 <textarea id="mainboard" style="position: relative; width: 100%; height: 100%;"><?php echo $nright; ?></textarea>
 

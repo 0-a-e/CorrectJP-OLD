@@ -159,8 +159,13 @@ input[type="checkbox"]:checked + .lavel2 {
 </head>
 <body>
 <!-- As a link -->
-<nav class="navbar" style="background-color: #2A2D31;" >
+<nav class="navbar" style="background-color: #19018c;" >
   <a class="navbar-brand" href="#" style="color: #ffffff;">ALIENジェネレーター</a>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" style="color:#ffffff;" href="/">怪しい日本語<span class="sr-only">(current)</span></a>
+      </li>
+  </ul>
 </nav>
 
 <div class="Logos" style="position: relative; margin-top: 30px;">
@@ -168,10 +173,10 @@ input[type="checkbox"]:checked + .lavel2 {
   メンテナンス中です。使用は可能ですが、正常に動作しない可能性があります。
 </div>
 <h2 class="top" style="text-align: center; font-size: 28px;">ALIENジェネレーター</h2>
-<h5 style="text-align: center;">贵様の正レい日本语を怪レい日本语に変換レ(しなさい)。</h5>
+<h5 style="text-align: center;">ALIENを𝐀L𝐈𝐄𝐍に変換するようなアレです。</h5>
 </div>
 </br>
-<p style="color: gray; text-align: center;">下に正レい日本语を入力(しなさい)。</p>
+<p style="color: gray; text-align: center;">下に英語を入力してください。（日本語は変換されません。）</p>
 <div id="forms">
 <div class="input-group">
   <div class="input-group-prepend">
@@ -180,7 +185,7 @@ input[type="checkbox"]:checked + .lavel2 {
   <textarea style="text-transform: uppercase;" class="form-control" id="xtjj"></textarea>
 </div>
 </br>
-<button onClick="Next()" style="color: #ffffff; background-color: #2A2D31; height: 5rem; box-shadow: 0px 0.5px 5px gray; font-size: 18px; border-radius: 50px;" id="bt" class="btn btn-primary btn-block">怪レい日本语にすゑ</button>
+<button onClick="Next()" style="color: #ffffff; background-color: #19018c; height: 5rem; box-shadow: 0px 0.5px 5px gray; font-size: 18px; border-radius: 50px;" id="bt" class="btn btn-primary btn-block">𝐀L𝐈𝐄𝐍にする</button>
 </div>
 </br>
 <form name="reve" style="text-align: center;">
@@ -267,7 +272,7 @@ if($app == y){
 
 }else{
     echo('<div class="app" style="text-align: center;">');
-    echo('<a href="https://play.google.com/store/apps/details?id=com.shenyusoftware.correctjp&hl=ja" style="padding: .46875rem .3rem;border-radius: 4px;" class="btn btn-outline-dark"><img width="63" height="15.3" src="./gp.png"></img>から怪しい日本語をインストール</a>');
+    echo('<a href="https://play.google.com/store/apps/details?id=com.shenyusoftware.correctjp&hl=ja" style="padding: .46875rem .3rem;border-radius: 4px;" class="btn btn-outline-dark"><img width="63" height="15.3" src="./gp.png"></img>からALIENをインストール</a>');
     echo('</div>');
 }
 ?>
@@ -281,22 +286,22 @@ if($app == y){
   data-preset="bubble">
 </div>
 
-<footer class="fixed-bottom"　 style="position: absolute; text-align: center; background-color: #2a2d31; color: #ffffff;">
+<footer class="fixed-bottom"　 style="position: absolute; text-align: center; background-color:#19018c ; color: #ffffff;">
 <p style="margin: 0;"><a href="https://twitter.com/0_a_e" class="btn" style="color: #ffffff; margin-bottom: 0rem; text-transform: none;">Created by Orange. MIT License.</a></p>
         <p style="margin: 0; color: #ffffff;"><a href="https://github.com/orangelinux/CorrectJP-NEW" style="color: #ffffff;" class="btn">ソースコードはGithubに公開されています。<i class="material-icons" style="color: #ffffff;">link</i></a></p>
     </footer> -->
 <script>
 function reinput() {
   const form = document.getElementById("forms");
-  forms.innerHTML = '<div class="input-group"><div class="input-group-prepend"><span class="input-group-text"></span></div><textarea class="form-control" id="xtjj"></textarea></div></br><button onClick="Next()" style="color: #ffffff; background-color: #2A2D31; height: 5rem; box-shadow: 0px 0.5px 5px gray; font-size: 18px; border-radius: 50px;" id="bt" class="btn btn-primary btn-block">怪レい日本语にすゑ</button></div>';
+  forms.innerHTML = '<div class="input-group"><div class="input-group-prepend"><span class="input-group-text"></span></div><textarea class="form-control" id="xtjj"></textarea></div></br><button onClick="Next()" style="color: #ffffff; background-color: #19018c; height: 5rem; box-shadow: 0px 0.5px 5px gray; font-size: 18px; border-radius: 50px;" id="bt" class="btn btn-primary btn-block">𝐀L𝐈𝐄𝐍にする</button></div>';
 }
 function btchange() {
 const bt = document.getElementById("bt");
 const reverse = document.reve.reverse.checked;
 if(reverse){
-bt.innerHTML = '正しい日本語にする';
+bt.innerHTML = '𝐀L𝐈𝐄𝐍にする';
 } else {
-  bt.innerHTML = '怪レい日本语にすゑ';
+  bt.innerHTML = '通常の英語に戻す';
 }
 console.log("STAT");
 }
